@@ -1,19 +1,19 @@
-#Socket Programming
+# Socket Programming
 
-##Introduction
+## Introduction
 A way of communication between clients in Python.
 
-##What is a socket?
+## What is a socket?
 A socket is the end point of communications between processes on a computer network, such as the internet.<br>
 It can be described as a programming interface allowing a program to communicate with other programs or processes,<br>
 on the internet or locally.<br>
-###Socket Address
+### Socket Address
 A socket address the combination of an IP address and a port number.<br>
 e.g.<br>
 IP address # 123.132.213.231<br>
 Port # 8080<br>
 <b>Socket address # 123.132.213.231 : 8080</b>
-###Socket in Python
+### Socket in Python
 ```python
 import socket
 s = socket.socket(socketfamily.sockettype.protocol=0)
@@ -23,7 +23,7 @@ s = socket.socket(socketfamily.sockettype.protocol=0)
 <b>protocol</b> : This is an optional argument and it usually defaults to 0.<br>
 <i>Further code for creating and using sockets in .py files</i>
 
-##Network & Internet
+## Network & Internet
 <b>Network</b> : A computer network is a group of computer systems and other computing hardware devices that are<br>
  linked together through communication channels.<br>
  <b>Network Computer</b> : A computer that is connected with one or more other computers.<br>
@@ -57,7 +57,7 @@ s = socket.socket(socketfamily.sockettype.protocol=0)
  
  <b>IP Address</b> : A way of identifying destinations and origins when sending data across a network, similar to a street address.<br>
  
- ##TCP vs UDP
+ ## TCP vs UDP
  
  
  
