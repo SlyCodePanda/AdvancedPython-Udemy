@@ -58,7 +58,12 @@ s = socket.socket(socketfamily.sockettype.protocol=0)
  <b>IP Address</b> : A way of identifying destinations and origins when sending data across a network, similar to a street address.<br>
  
  ## TCP vs UDP
- 
- 
+<b>TCP</b> is a transport layer protocol and is used to create a connection between remote computers by transporting and ensuring the delivery of messages<br>
+over supporting networks and the internet.</br>
+For faster and security compromised connections we use UDP.<br>
+<b>UDP</b> does not need an ACK signal (Acknowledgment signal) in many cases. Speed is considered more important that security.<br>
+So UDP compromises on security but is far faster than TCP. It is an unreliable service which does not guarantee delivery and no protection.<br>
+It does not retransmit lost packets like TCP does. Good for real-time performance.<br>
+
  
  
