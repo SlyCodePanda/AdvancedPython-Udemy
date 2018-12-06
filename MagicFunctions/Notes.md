@@ -1,4 +1,4 @@
-#Magic Functions
+# Magic Functions
 
 You can use these functions to <b>override</b> symbols to do whatever you want.
 Any function that starts and ends with two underscores is a magic method.
