@@ -102,7 +102,34 @@ c = add(5, 4)
 print(c)
 ```
 This will print '11'.<p>
-Another this that can be done with decorator functions is checking the validity of arguments passed using a decorator function.<br>
-```python
 
+## Class Decorators
+<u>What are args</u>?:<br>
+Used to pass a variable number of arguments to a function.<br>
+It allows you to take in more arguments than the number of formally declared arguments previously defined.<br>
+Within <b>*args</b>, any number of extra arguments can be tacked on to your current formal parameters.<p>
+
+<u>What are kwargs</u>?<br>
+The special syntax <b>**kwargs</b> in function definitions in python is used to pass a keyworded, variable-length argument list.<br>
+You can think of the kwargs as being a <b>dictionary</b> that maps each keyword to the value that we pass alongside it.<p>
+e.g:<br>
+```python
+class x:
+    def __init__(self):
+        print("An instance or object was initialized")
+
+    def __call__(self, *args, **kwargs):
+        print("Arguments are ", args, kwargs)
+
+
+a = x()
+print("Calling Objects or Arguments")
+# Use call function.
+a(4, 5, z=12, v=20)
+```
+This code will return:
+```text
+An instance or object was initialized
+Calling Objects or Arguments
+Arguments are  (4, 5) {'z': 12, 'v': 20}
 ```
