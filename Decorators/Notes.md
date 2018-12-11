@@ -133,3 +133,55 @@ An instance or object was initialized
 Calling Objects or Arguments
 Arguments are  (4, 5) {'z': 12, 'v': 20}
 ```
+
+## Meta Classes
+The instance of a class is called a "Meta Class".<br>
+
+### Creating Meta Classes
+Here is a basic example of a meta class:<br>
+```python
+# In this example we have modified a class using an object of this class.
+class x:
+    pass
+
+
+# Then we have attached a variable
+x.variable = 10
+c = x()
+
+# Then accessed that variable using that object.
+print(c.variable)
+```
+
+We Can also create meta objcts using the 'type' keyword:<br>
+```python
+def metaFunc():
+    print("I am the meta class function")
+
+
+class inherit:
+    def func(self):
+        print("I am the inherited method")
+
+
+metaObject = type('meta', (inherit, ), dict(name="SomeDict", metafunction=metaFunc))
+
+print(type(metaObject))
+
+# Meta Class object
+b = metaObject()
+
+print(type(b))
+
+b.func()
+
+print(b.name)
+```
+
+This code will print the following:<br>
+```text
+<class 'type'>
+<class '__main__.meta'>
+I am the inherited method
+SomeDict
+```
